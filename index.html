@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Const</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="full_page">
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times</a
+        >
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Meet the Team</a>
+        <a href="#">FAQ</a>
+      </div>
+  
+      <button class="openbtn" onclick="openNav()">&#9776</button>
+  
+      <script>function openNav() {
+        document.getElementById("mySidepanel").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }</script>
+      <header>
+
+       
+
+        <div id="logo">EXchequer</div>
+
+        <div class="navigation">
+          <ul>
+            <a href="#"><li id="navlink">Home</li></a>
+            <a href="#"><li id="navlink">About</li></a>
+            <a href="#"><li id="navlink">Services</li></a>
+            <a href="#"><li id="navlink">Projects</li></a>
+            <a href="#"><li id="navlink">Meet the Team</li></a>
+            <a href="#"><li id="navlink">FAQ</li></a>
+          </ul>
+
+          <div id="email">exchequer@gmail.com</div>
+
+          <div class="social_links">
+            <a href="#"><img src="./img/fb.svg" alt="fb" /></a>
+            <a href="#"><img src="./img/ig.svg" alt="ig" /></a>
+          </div>
+        </div>
+      </header>
+
+      <div class="banner">
+        <img src="./img/const_banner.jpg" alt="banner" />
+      </div>
+
+      <div class="about">
+        <img src="./img/about.jpg" alt="about" />
+
+        <div class="about_content">
+          <h1>About Us</h1>
+          <p>
+            Exchequer has been a renowned construction company since its <br />
+            foundation in the year 2000. <br />Technical excellence is at the
+            heart of our project delivery, and we <br />use the most up-to-date
+            building methods, innovations, and <br />technology to ensure we
+            provide the optimum value to our clients. <br />
+            Get in touch with us today for a free consultation.
+          </p>
+
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div class="services">
+        <h1>Our Services</h1>
+        <p>A LONG-TIME EFFECT</p>
+
+        <div class="service_pics">
+          <div class="display">
+            <img src="./img/slide3.png" alt="" />
+            <img src="./img/slide2.png" alt="" />
+          </div>
+
+          <img src="./img/slide1.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer_links">
+        <a href="#"><img src="./img/fb.svg" alt="fb" /></a>
+        <a href="#"><img src="./img/ig.svg" alt="ig" /></a>
+      </div>
+
+      <div class="phone_nav">
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Services</li></a>
+          <a href="#"><li>Projects</li></a>
+          <a href="#"><li>Meet the Team</li></a>
+          <a href="#"><li>FAQ</li></a>
+        </ul>
+
+      </div>
+      <div class="footer">
+        
+        <p>&copy;2022 by EXchequer</p>
+      </div>
+    </div>
+  </body>
+</html>
