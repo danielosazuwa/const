@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sidepanel {
+  height: 250px;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background: linear-gradient(#000428, #004e92);
+  opacity: 100%;
+  height: 1000px;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidepanel a {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 20px;
+}
+
+.openbtn {
+  position: absolute;
+  right: 5px;
+  font-size: 20px;
+
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.openbtn,
+.sidepanel {
+  display: none;
+  position: absolute;
+}
+
+#logo {
+  font-size: 18px;
+}
+
+header {
+  background: floralwhite;
+  display: flex;
+  padding: 40px 10px 40px 10px;
+}
+
+#logo {
+  padding-left: 30px;
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0px 80px 0px 20px;
+}
+
+ul #navlink {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+#email {
+  padding: 1.5px 30px 0px 30px;
+  font-size: 13px;
+}
+
+.social_links img {
+  padding-left: 6px;
+  padding-top: -8px;
+}
+
+.banner {
+  background: rgb(34, 6, 6);
+  display: flex;
+  justify-content: center;
+  padding: 80px 80px 80px 80px;
+  scroll-behavior: smooth;
+}
+
+.banner img {
+  height: 600px;
+  width: 100%;
+}
+
+.about {
+  background: rgb(49, 51, 48);
+  display: flex;
+  padding: 50px 60px 80px 60px;
+}
+
+.about img {
+  height: 500px;
+  width: 50%;
+}
+
+.about_content {
+  width: 50%;
+  background: rgb(182, 107, 50);
+  text-align: center;
+  padding: 130px 50px 0px 50px;
+  color: white;
+}
+
+.about_content h1 {
+  padding-bottom: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.about_content p {
+  line-height: 25px;
+  padding-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.about_content button {
+  background: rgb(182, 107, 50);
+  color: white;
+  height: 30px;
+  padding: 3px 3px 3px 3px;
+  border: 2px solid white;
+}
+
+.about_content button:hover {
+  background: white;
+  color: rgb(182, 107, 50);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.services {
+  text-align: center;
+  padding: 90px 20px 50px 20px;
+}
+.services h1 {
+  padding-bottom: 30px;
+}
+.services p {
+  padding-bottom: 40px;
+}
+.services img {
+  width: 50%;
+}
+.display {
+  display: flex;
+  justify-content: center;
+}
+.display img {
+  width: 50%;
+  padding: 0px 20px 30px 20px;
+}
+
+/*This phone nav is for mobile */
+
+.phone_nav {
+  display: none;
+  position: relative;
+}
+.footer_links {
+  display: flex;
+  justify-content: center;
+}
+.footer_links img {
+  padding: 0px 8px 0px 8px;
+}
+.footer {
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+}
+
+@media (min-width: 0px) and (max-width: 414px) {
+  .openbtn,
+  .sidepanel {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+  }
+
+  #logo {
+    font-size: 30px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(20, 20, 20), rgb(192, 63, 31));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .banner {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .banner img {
+    height: 250px;
+    width: 100%;
+  }
+
+  .about {
+    padding: 90px 15px 90px 15px;
+  }
+
+  .about img {
+    height: 260px;
+    width: 60%;
+  }
+
+  .about_content {
+    width: 40%;
+    padding: 50px 10px 20px 10px;
+  }
+  .about_content h1 {
+    font-size: 15px;
+  }
+
+  .about_content p {
+    font-size: 12px;
+  }
+
+  .about_content button {
+    background: rgb(182, 107, 50);
+    color: white;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid white;
+    font-size: 10px;
+  }
+
+  .about_content button:hover {
+    background: white;
+    color: rgb(182, 107, 50);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .services {
+    text-align: center;
+    padding: 90px 5px 50px 5px;
+  }
+  .display {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .services img {
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .display img {
+    width: 100%;
+    padding: 0px 5px 30px 5px;
+  }
+
+  .phone_nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .phone_nav li {
+    display: inline;
+  }
+
+  .phone_nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 0px 2px 0px 2px;
+  }
+}
